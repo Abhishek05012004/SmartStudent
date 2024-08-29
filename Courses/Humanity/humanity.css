@@ -1,0 +1,180 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    /* Dark background color */
+    color: #f0f4f8;
+    /* Light text color for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    /* Darker background color for the navbar */
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow for depth */
+}
+
+.navbar .logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo-section h1 {
+    margin: 0 0 0 10px;
+    font-size: 1.4em;
+    /* Reduced font size */
+    font-weight: 600;
+    /* Make the logo text bold */
+}
+
+.navbar .logo-section i {
+    font-size: 1.6em;
+    /* Slightly larger icon */
+}
+
+.logout-btn {
+    background-color: #3498db;
+    /* Blue background color */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    /* Rounded button for a sleek look */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Space between icon and text */
+    font-size: 1.1em;
+    font-weight: 500;
+    /* Slightly bolder text */
+}
+
+.logout-btn i {
+    font-size: 1.2em;
+    /* Size of logout icon */
+}
+
+.logout-btn:hover {
+    background-color: #2980b9;
+    /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow on hover */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    /* Adjusted to ensure no space between rows */
+}
+
+.box {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    /* Gradient with cool colors */
+    color: white;
+    width: calc(33.33% - 20px);
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.box i {
+    font-size: 2.5em;
+    /* Larger icon size for emphasis */
+    margin-bottom: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.box p {
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    /* Align text properly */
+}
+
+.box:hover,
+.box:active {
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    /* Reverse gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.box:hover i {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: calc(50% - 20px);
+        /* Ensure two boxes per row */
+        height: 120px;
+    }
+
+    .box i {
+        font-size: 2em;
+    }
+
+    .box p {
+        font-size: 1em;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+    }
+
+    .navbar .logo-section h1 {
+        font-size: 1em;
+    }
+
+    .navbar .logo-section i {
+        font-size: 1.2em;
+    }
+
+    .logout-btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: calc(50% - 20px);
+        /* Ensure two boxes per row */
+        height: 100px;
+    }
+
+    .box i {
+        font-size: 1.8em;
+    }
+
+    .box p {
+        font-size: 0.9em;
+    }
+}

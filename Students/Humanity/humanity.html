@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanities Students Portal</title>
+    <link rel="stylesheet" href="humanity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-section">
+            <i class="fas fa-book"></i>
+            <h1>Humanities</h1>
+        </div>
+        <button class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="box" onclick="navigateTo('history')">
+                <i class="fas fa-history"></i>
+                <p>History</p>
+            </div>
+            <div class="box" onclick="navigateTo('literature')">
+                <i class="fas fa-pen"></i>
+                <p>Literature</p>
+            </div>
+            <div class="box" onclick="navigateTo('philosophy')">
+                <i class="fas fa-brain"></i>
+                <p>Philosophy</p>
+            </div>
+        </div>
+    </div>
+    <script src="humanity.js"></script>
+</body>
+
+</html>

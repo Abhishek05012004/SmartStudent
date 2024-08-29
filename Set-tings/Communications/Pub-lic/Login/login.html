@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="login-wrapper">
+        <div class="login-container">
+            <div class="left-half">
+                <img src="background.webp" alt="Background Image">
+            </div>
+            <div class="right-half">
+                <form id="login-form">
+                    <h2>Welcome!</h2>
+                    <p>Good to see you back.</p>
+                    <div class="role-container">
+                        <label for="role">Login as a :</label>
+                        <select id="role" name="role">
+                            <option value="student">Student</option>
+                            <option value="faculty">Faculty</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" id="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-container">
+                        <i class='bx bxs-lock-alt'></i>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <i class='bx bxs-show toggle-password'></i>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

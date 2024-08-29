@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-section">
+            <i class="fas fa-user-shield"></i>
+            <h1>Admin Panel</h1>
+        </div>
+        <button class="logout-btn" onclick="logout()">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="box" onclick="navigateTo('students')">
+                <i class="fas fa-user-graduate"></i>
+                <p>Students</p>
+            </div>
+            <div class="box" onclick="navigateTo('faculty')">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <p>Faculty</p>
+            </div>
+            <div class="box" onclick="navigateTo('courses')">
+                <i class="fas fa-book"></i>
+                <p>Courses</p>
+            </div>
+            <div class="box" onclick="navigateTo('attendance')">
+                <i class="fas fa-calendar-check"></i>
+                <p>Attendance</p>
+            </div>
+            <div class="box" onclick="navigateTo('schedule')">
+                <i class="fas fa-calendar-alt"></i>
+                <p>Schedule</p>
+            </div>
+            <div class="box" onclick="navigateTo('messages')">
+                <i class="fas fa-envelope"></i>
+                <p>Messages</p>
+            </div>
+            <div class="box" onclick="navigateTo('settings')">
+                <i class="fas fa-cogs"></i>
+                <p>Settings</p>
+            </div>
+            <div class="box" onclick="navigateTo('users')">
+                <i class="fas fa-users"></i>
+                <p>Users</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

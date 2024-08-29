@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Medicine Students Portal</title>
+    <link rel="stylesheet" href="health.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-section">
+            <i class="fas fa-hospital"></i>
+            <h1>Health and Medicine </h1>
+        </div>
+        <button class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="box" onclick="navigateTo('medicine')">
+                <i class="fas fa-stethoscope"></i>
+                <p>Medicine</p>
+            </div>
+            <div class="box" onclick="navigateTo('nursing')">
+                <i class="fas fa-user-nurse"></i>
+                <p>Nursing</p>
+            </div>
+            <div class="box" onclick="navigateTo('pharmacy')">
+                <i class="fas fa-pills"></i>
+                <p>Pharmacy</p>
+            </div>
+            <div class="box" onclick="navigateTo('dentist')">
+                <i class="fas fa-tooth"></i>
+                <p>Dentistry</p>
+            </div>
+            <div class="box" onclick="navigateTo('veterinary')">
+                <i class="fa-solid fa-shield-dog"></i>
+                <p>Veterinary Medicine</p>
+            </div>
+            <div class="box" onclick="navigateTo('therapy')">
+                <i class="fas fa-diagnoses"></i>
+                <p>Physical Therapy</p>
+            </div>
+        </div>
+    </div>
+    <script src="health.js"></script>
+</body>
+
+</html>

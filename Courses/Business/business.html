@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Students Portal</title>
+    <link rel="stylesheet" href="business.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-section">
+            <i class="fas fa-briefcase"></i>
+            <h1>Business</h1>
+        </div>
+        <button class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="box" onclick="navigateTo('administration')">
+                <i class="fas fa-building"></i>
+                <p>Business Administration</p>
+            </div>
+            <div class="box" onclick="navigateTo('finance')">
+                <i class="fas fa-dollar-sign"></i>
+                <p>Finance</p>
+            </div>
+            <div class="box" onclick="navigateTo('marketing')">
+                <i class="fas fa-bullhorn"></i>
+                <p>Marketing</p>
+            </div>
+            <div class="box" onclick="navigateTo('management')">
+                <i class="fas fa-tachometer-alt"></i>
+                <p>Management</p>
+            </div>
+            <div class="box" onclick="navigateTo('accounting')">
+                <i class="fas fa-calculator"></i>
+                <p>Accounting</p>
+            </div>
+            <div class="box" onclick="navigateTo('enterprenuer')">
+                <i class="fas fa-lightbulb"></i>
+                <p>Enterprenuership</p>
+            </div>
+            <div class="box" onclick="navigateTo('human')">
+                <i class="fas fa-users"></i>
+                <p>Human Resource Management</p>
+            </div>
+        </div>
+    </div>
+    <script src="business.js"></script>
+</body>
+
+</html>

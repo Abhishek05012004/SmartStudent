@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law and Criminal Justice Students Portal</title>
+    <link rel="stylesheet" href="law.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-section">
+            <i class="fas fa-balance-scale"></i>
+            <h1>Law and Criminal Justice</h1>
+        </div>
+        <button class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="box" onclick="navigateTo('llb')">
+                <i class="fas fa-gavel"></i>
+                <p>Law (LLB)</p>
+            </div>
+            <div class="box" onclick="navigateTo('criminal')">
+                <i class="fas fa-user-shield"></i>
+                <p>Criminology</p>
+            </div>
+            <div class="box" onclick="navigateTo('forensic')">
+                <i class="fas fa-flask"></i>
+                <p>Forensic Science</p>
+            </div>
+            <div class="box" onclick="navigateTo('public')">
+                <i class="fas fa-building"></i>
+                <p>Public Administration</p>
+            </div>
+        </div>
+    </div>
+    <script src="law.js"></script>
+</body>
+
+</html>

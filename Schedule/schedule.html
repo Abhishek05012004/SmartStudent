@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Students</title>
+    <link rel="stylesheet" href="schedule.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-section">
+            <i class="fas fa-calendar-alt"></i><!-- Icon added -->
+            <h1>Schedule</h1>
+        </div>
+        <button class="logout-btn" onclick="logout()">
+            <i class="fas fa-sign-out-alt"></i> <!-- Logout icon added -->
+            Logout
+        </button>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="box" onclick="navigateTo('engineer')">
+                <i class="fas fa-cogs"></i>
+                <p>Engineering</p>
+            </div>
+            <div class="box" onclick="navigateTo('humanity')">
+                <i class="fas fa-book"></i>
+                <p>Humanities</p>
+            </div>
+            <div class="box" onclick="navigateTo('health')">
+                <i class="fas fa-hospital"></i>
+                <p>Health and Medicine</p>
+            </div>
+            <div class="box" onclick="navigateTo('business')">
+                <i class="fas fa-briefcase"></i>
+                <p>Business</p>
+            </div>
+            <div class="box" onclick="navigateTo('law')">
+                <i class="fas fa-balance-scale"></i>
+                <p>Law and Criminal Justice</p>
+            </div>
+            <div class="box" onclick="navigateTo('communications')">
+                <i class="fas fa-bullhorn"></i>
+                <p>Communications and Media</p>
+            </div>
+            <div class="box" onclick="navigateTo('hospitality')">
+                <i class="fas fa-concierge-bell"></i>
+                <p>Hospitality and Tourism</p>
+            </div>
+        </div>
+    </div>
+    <script src="schedule.js"></script>
+</body>
+
+</html>
